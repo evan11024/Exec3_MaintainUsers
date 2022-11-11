@@ -74,7 +74,7 @@ namespace ConsoleApp1
 		}
 		public void Select(int Id)
 		{
-			string sql = "select Id , Title FROM Users WHERE Id >@Id ORDER BY Id DESC";
+			string sql = "select * FROM Users WHERE Id >@Id ORDER BY Id DESC";
 
 			var dbHelper = new SqlDbHelper("default");
 
